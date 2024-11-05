@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "allergyAID",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2024-08-31T15:51:52.596Z"
+}

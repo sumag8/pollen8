@@ -1,0 +1,81 @@
+type Peopleloc @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Firstname: String
+  Lastname: String
+  untitledfield: String
+  Locations: [Locations] @hasMany(indexName: "byPeopleloc", fields: ["id"])
+}
+
+type Locations @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Location: String
+  Locationid: Int
+  Longit: Float
+  Latit: Float
+  peoplelocID: ID @index(name: "byPeopleloc")
+}
+
+type People9 @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  first_name: String
+  last_name: String
+  home_lat: Float
+  home_long: Float
+  aqpollen: Boolean
+  aqpm: Boolean
+  mainlocation: String
+  loctrk: Boolean
+  userid: String
+  loginid: String
+}
+
+type Allergies9 @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Allegyname: String
+  AllegyType: String
+  AllergySymptom1: String
+  AllergySymptom2: String
+  AllergySymptom3: String
+  AllergySymptom4: String
+}
+
+type Notifications @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  date: String
+  location_lat: Float
+  location_long: Float
+  type: String
+  Allergiesid: String
+  Details: String
+  ImageLarge: AWSURL
+  ImageSmall: AWSURL
+  Locationid: Int
+  Locationname: String
+}
+
+type PersonAllergy @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Peopleid: ID
+  Allergiesid: ID
+}
+
+type Allergies @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  type: String
+  symptom1: String
+  symptom2: String
+  symptom3: String
+  symptom4: String
+  image: AWSURL
+}
+
+type People @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  first_name: String
+  last_name: String
+  home_lat: Float
+  home_long: Float
+  Locationid: Int
+}
+ 

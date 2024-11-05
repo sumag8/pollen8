@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-allergyaid-staging-ad29d-authRole",
+      "UnauthRoleArn": "arn:aws:iam::401300725107:role/amplify-allergyaid-staging-ad29d-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::401300725107:role/amplify-allergyaid-staging-ad29d-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-allergyaid-staging-ad29d-deployment",
+      "UnauthRoleName": "amplify-allergyaid-staging-ad29d-unauthRole",
+      "StackName": "amplify-allergyaid-staging-ad29d",
+      "StackId": "arn:aws:cloudformation:us-east-1:401300725107:stack/amplify-allergyaid-staging-ad29d/66cd3270-6569-11ef-9bef-12aeeef1aee3",
+      "AmplifyAppId": "dg1y8s0m4cii6"
+    },
+    "categories": {
+      "auth": {
+        "allergyAID": {}
+      },
+      "storage": {
+        "s3allergyaidstorageec8205cb": {}
+      }
+    }
+  }
+}
